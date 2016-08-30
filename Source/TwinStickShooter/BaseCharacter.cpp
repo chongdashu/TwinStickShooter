@@ -37,6 +37,7 @@ void ABaseCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompo
 void ABaseCharacter::CalculateHealth(float Delta) 
 {
 	Health += Delta;
+	CalculateDead();
 }
 
 // Implement CalculateDead
